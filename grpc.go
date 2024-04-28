@@ -16,8 +16,6 @@ func (e Error) GRPCCode() codes.Code {
 	// GRPC Errors
 	case ErrOK:
 		return codes.OK
-	case ErrCreated:
-		return codes.OK
 	case ErrCanceled:
 		return codes.Canceled
 	case ErrUnknown:

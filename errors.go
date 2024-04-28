@@ -15,14 +15,14 @@ type Error string
 
 // Error implements error
 func (e Error) Error() string {
-	if e == ErrOK {
+	if e == ErrOK || e == ErrCreated {
 		return ""
 	}
 	return string(e)
 }
 
 func (e Error) TypeCode() string {
-	if e == ErrOK {
+	if e == ErrOK || e == ErrCreated {
 		return ""
 	}
 	return string(e)
