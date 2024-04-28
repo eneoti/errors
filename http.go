@@ -14,6 +14,8 @@ func (e Error) HTTPCode() int {
 	// GRPC Errors
 	case ErrOK:
 		return http.StatusOK
+	case ErrCreated:
+		return http.StatusCreated
 	case ErrCanceled:
 		return http.StatusRequestTimeout
 	case ErrUnknown:

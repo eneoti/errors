@@ -3,6 +3,7 @@ package errors
 // Errors named in line with GRPC codes and some that overlap with HTTP statuses
 const (
 	ErrOK                 Error = "OK"                  // HTTP: 200 GRPC: codes.OK
+	ErrCreated            Error = "CREATED"             // HTTP: 201 GRPC: codes.Created
 	ErrCanceled           Error = "CANCELED"            // HTTP: 408 GRPC: codes.Canceled
 	ErrUnknown            Error = "UNKNOWN"             // HTTP: 510 GRPC: codes.Unknown
 	ErrInvalidArgument    Error = "INVALID_ARGUMENT"    // HTTP: 400 GRPC: codes.InvalidArgument
